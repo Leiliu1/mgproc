@@ -1,1 +1,0 @@
-\draw[move={nom},color = olive] (nom) to[out=west,in=south west] node[left]{nom} (tnom);

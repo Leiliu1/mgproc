@@ -1,3 +1,0 @@
-\draw[move = {nom}, olive] (nom) to[out=west, in=south west] (tnom);
-\draw[move = {nom}, olive] (nommax) to[out=west, in=south west] (tnommax);
-\draw[move = {rtmv}, cyan] (np) to[out=west, in=south east] (tnp);

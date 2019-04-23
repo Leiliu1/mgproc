@@ -1,1 +1,0 @@
-	\draw[move = {nom}, olive] (nom) to[out=west, in=south west] (tnom);
