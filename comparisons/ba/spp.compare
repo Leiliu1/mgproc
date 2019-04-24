@@ -1,0 +1,7 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+sdp ; ; sdp_spp_yba ; sdp_spp_nba ;
+vdp ; ; vdp_spp_yba ; vdp_spp_nba ;
+rdp ; ; rdp_spp_yba ; rdp_spp_nba ;

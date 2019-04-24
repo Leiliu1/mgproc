@@ -1,0 +1,66 @@
+\begin{forest}
+%
+%%%%%%%%
+% Tree %
+%%%%%%%%
+%
+[CP, name=t
+    [C, name=t1, empty]
+    [TP, name=t2
+        [TP, name=t21
+            [T, name=t211, empty]
+            [vP, name=t212
+                [Zhangsan, name=t2121]
+                [v', name=t2122
+                    [v, name=t21221, empty]
+                    [VP, name=t21222
+                        [put.down, name=t212221]
+                        [knife.fort, name=t212222]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+%%%%%%%%%%%%%%%
+% Annotations %
+%%%%%%%%%%%%%%%
+%
+\node[index]            at (t)                        {1};
+\node[outdex]           at (t)                        {2};
+%
+\node[index]            at (t1)                       {2};
+\node[outdex]           at (t1)                       {3};
+%
+\node[index]            at (t2)                       {2};
+\node[outdex]           at (t2)                       {4};
+%
+\node[index]            at (t21)                      {4};
+\node[outdex]           at (t21)                      {5};
+%
+\node[index]            at (t211)                     {5};
+\node[outdex]           at (t211)                     {6};
+%
+\node[index]            at (t212)                     {5};
+\node[outdex]           at (t212)                     {7};
+%
+\node[index]            at (t2121)                    {7};
+\node[outdex]           at (t2121)                    {8};
+%
+\node[index]            at (t2122)                    {7};
+\node[outdex]           at (t2122)                    {9};
+%
+\node[index]            at (t21221)                   {9};
+\node[outdex]           at (t21221)                  {10};
+%
+\node[index]            at (t21222)                   {9};
+\node[outdex]           at (t21222)                  {11};
+%
+\node[index]            at (t212221)                 {11};
+\node[outdex]           at (t212221)                 {12};
+%
+\node[index]            at (t212222)                 {11};
+\node[outdex]           at (t212222)                 {13};
+%
+%
+\end{forest}

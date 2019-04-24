@@ -1,0 +1,67 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage{mypackages}
+\usepackage{mycommands}
+
+\begin{document}
+
+lpp.table()
+\begin{tabular}{lllll}
+\hline
+ Metric   & Filters   & sdp   & vdp   & rdp   \\
+\hline
+ AvgS     &           & No    & No    & No    \\
+ AvgS'    &           & No    & No    & No    \\
+ AvgT     &           & Yes   & Yes   & Yes   \\
+ AvgT'    &           & Yes   & Yes   & Yes   \\
+ BoxT     &           & Yes   & Yes   & Yes   \\
+ BoxT'    &           & Yes   & Yes   & Yes   \\
+ MaxS     &           & Tie   & Tie   & Tie   \\
+ MaxS'    &           & Tie   & Tie   & Tie   \\
+ MaxSR    &           & Yes   & Yes   & Yes   \\
+ MaxSR'   &           & Yes   & Yes   & Yes   \\
+ MaxT     &           & Yes   & Yes   & Yes   \\
+ MaxT'    &           & Yes   & Yes   & Yes   \\
+ MaxTR    &           & Yes   & Yes   & Yes   \\
+ MaxTR'   &           & Yes   & Yes   & Yes   \\
+ Movers   &           & Yes   & Yes   & Yes   \\
+ Movers'  &           & Yes   & Yes   & Yes   \\
+ SumS     &           & Yes   & Yes   & Yes   \\
+ SumS'    &           & Yes   & Yes   & Yes   \\
+ SumT     &           & Yes   & Yes   & Yes   \\
+ SumT'    &           & Yes   & Yes   & Yes   \\
+\hline
+\end{tabular}
+
+\vskip 4em
+
+short\_pp.table()
+\begin{tabular}{lllll}
+\hline
+ Metric   & Filters   & sdp   & vdp   & rdp   \\
+\hline
+ AvgS     &           & Tie   & Tie   & Tie   \\
+ AvgS'    &           & Tie   & Tie   & Tie   \\
+ AvgT     &           & Tie   & No    & No    \\
+ AvgT'    &           & Yes   & No    & No    \\
+ BoxT     &           & Tie   & No    & No    \\
+ BoxT'    &           & No    & No    & No    \\
+ MaxS     &           & Tie   & Tie   & Tie   \\
+ MaxS'    &           & Tie   & Tie   & Tie   \\
+ MaxSR    &           & Tie   & Tie   & Tie   \\
+ MaxSR'   &           & Tie   & Tie   & Tie   \\
+ MaxT     &           & Tie   & No    & No    \\
+ MaxT'    &           & Tie   & No    & No    \\
+ MaxTR    &           & Tie   & No    & No    \\
+ MaxTR'   &           & No    & No    & No    \\
+ Movers   &           & Tie   & Tie   & Tie   \\
+ Movers'  &           & Tie   & Tie   & Tie   \\
+ SumS     &           & Tie   & Tie   & Tie   \\
+ SumS'    &           & Tie   & Tie   & Tie   \\
+ SumT     &           & Tie   & No    & No    \\
+ SumT'    &           & No    & No    & No    \\
+\hline
+\end{tabular}
+
+
+\end{document}
