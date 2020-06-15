@@ -1,0 +1,4 @@
+			\draw[move={np}] (np) to[out=north west,in=south west] (tnp);
+			\draw[move={promo}] (promo) to[out= north west,in=south west] (tpromo);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+			\draw[move={nom2}] (nom2) to[out=west,in=south west] (tnom2);

@@ -1,0 +1,1000 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage{mypackages}
+\usepackage{mycommands}
+\begin{document}
+
+
+
+\begin{itemize}
+	\item Trees
+\end{itemize}
+
+\begin{exe}
+	\ex PrtShft - short NP - joined - Chris \textbf{put on} a hat.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[V
+										[put]
+										[on]
+									]
+									[DP
+										[a]
+										[hat]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={prt}] (prt) to[out=east,in=south] (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./prtshft_snp_joined.io.mgproc.forest}
+
+\pagebreak
+\begin{exe}
+	\ex PrtShft - short NP - separated - Chris \textbf{put} a hat \textbf{on}.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP, name = tprt
+									[VP
+										[V
+											[put]
+											[on, name = prt]
+										]
+										[DP
+											[a]
+											[hat]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			\draw[move={prt}] (prt) to[out=west,in=south east] (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./prtshft_snp_sep.io.mgproc.forest}
+
+
+\pagebreak
+
+\begin{exe}
+	\ex PrtShft - far NP - joined - Chris \textbf{put} \textbf{on} a very very very very expensive hat.\\
+	\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[V
+										[put]
+										[on]
+									]
+									[DP
+										[a]
+										[NP
+											[AP
+												[very]
+												[AP
+													[very]
+													[AP
+														[very]
+														[AP
+															[very]
+															[expensive]
+														]
+													]
+												]
+											]
+											[hat]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={prt}] (prt) to[out=east,in=south] (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./prtshft_fnp_joined.io.mgproc.forest}
+
+\pagebreak
+\begin{exe}
+	\ex PrtShft - far NP - separated - Chris \textbf{put} a very very very very expensive hat \textbf{on}.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP, name = tprt
+									[VP
+										[V
+											[put]
+											[on, name = prt]
+										]
+										[DP
+											[a]
+											[NP
+												[AP
+													[very]
+													[AP
+														[very]
+														[AP
+															[very]
+															[AP
+																[very]
+																[expensive]
+															]
+														]
+													]
+												]
+												[hat]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			\draw[move={prt}, Teal] (prt) to[out=west,in=south east] node[fill=white, pos=.6]{PrtShft} (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./prtshft_fnp_sep.io.mgproc.forest}
+
+\pagebreak
+
+
+\begin{exe}
+	\ex PrtShft - near NP - joined - Chris \textbf{put} \textbf{on} a hat which Alex made with love.\\
+	\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[V
+										[put]
+										[on]
+									]
+									[DP
+										[a]
+										[NP
+											[hat]
+											[CP, name = tpromo
+												[CP
+													[C, empty]
+													[TP, name = tnom2
+														[TP
+															[T, empty]
+															[vP
+																[Alex, name = nom2]
+																[v'
+																	[v, empty]
+																	[VP
+																		[VP
+																			[made]
+																			[which, name = promo]
+																		]
+																		[PP
+																			[with]
+																			[love]
+																		]
+																	]
+																]
+															]
+														]
+													]
+												]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			\draw[move={promo}] (promo) to[out= north west,in=south west] (tpromo);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+			\draw[move={nom2}] (nom2) to[out=west,in=south west] (tnom2);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./prtshft_nnp_joined.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex PrtShft - near NP - separated - Chris \textbf{put} a hat which Alex made with love \textbf{on}.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP, name = tprt
+									[VP
+										[V
+											[put]
+											[on, name = prt]
+										]
+										[DP
+											[a]
+											[NP
+												[hat]
+												[CP, name = tpromo
+													[CP
+														[C, empty]
+														[TP, name = tnom2
+															[TP
+																[T, empty]
+																[vP
+																	[Alex, name = nom2]
+																	[v'
+																		[v, empty]
+																		[VP
+																			[VP
+																				[made]
+																				[which, name = promo]
+																			]
+																			[PP
+																				[with]
+																				[love]
+																			]
+																		]
+																	]
+																]
+															]
+														]
+													]
+												]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			\draw[move={prt}, Teal] (prt) to[out=west,in=south east] node[fill=white, pos=.6]{PrtShft} (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+			\draw[move={nom2}] (nom2) to[out=west,in=south west] (tnom2);
+			\draw[move={promo}] (promo) to[out= north west,in=south west] (tpromo);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./prtshft_nnp_sep.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex SmlCls - short NP - joined - Chris \textbf{put on} a hat.\\
+	\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[put]
+									[SC
+										[on]
+										[DP
+											[a]
+											[hat, name =np]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={np}] (np) to[out=east,in=south] (tnp);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./smlcls_snp_joined.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex SmlCls - short NP - separated - Chris \textbf{put} a hat \textbf{on}.\\
+	\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[put]
+									[SC, name =tnp
+										[SC
+											[on]
+											[DP, name =np
+												[a]
+												[hat]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			\draw[move={np}] (np) to[out=north west,in=south west] (tnp);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./smlcls_snp_sep.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex SmlCls - far NP - joined - Chris \textbf{put} \textbf{on} a very very very very expensive hat.\\
+	\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[put]
+									[SC
+										[on]
+										[DP
+											[a]
+											[NP
+												[AP
+													[very]
+													[AP
+														[very]
+														[AP
+															[very]
+															[AP
+																[very]
+																[expensive]
+															]
+														]
+													]
+												]
+												[hat]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={np}] (np) to[out=east,in=south] (tnp);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./smlcls_fnp_joined.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex SmlCls - far NP - separated - Chris \textbf{put} a very very very very expensive hat \textbf{on}.\\
+	\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[put]
+									[SC, name =tnp
+										[SC
+											[on]
+											[DP, name = np
+												[a]
+												[NP
+													[AP
+														[very]
+														[AP
+															[very]
+															[AP
+																[very]
+																[AP
+																	[very]
+																	[expensive]
+																]
+															]
+														]
+													]
+													[hat]
+												]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			\draw[move={np}] (np) to[out=north west,in=south west] (tnp);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./smlcls_fnp_sep.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex SmlCls - near NP - joined - Chris \textbf{put} \textbf{on} a hat which Alex made with love.\\
+	\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[put]
+									[SC
+										[on]
+										[DP
+											[a]
+											[NP
+												[hat]
+												[CP, name = tpromo
+													[CP
+														[C, empty]
+														[TP, name = tnom2
+															[TP
+																[T, empty]
+																[vP
+																	[Alex, name = nom2]
+																	[v'
+																		[v, empty]
+																		[VP
+																			[VP
+																				[made]
+																				[which, name = promo]
+																			]
+																			[PP
+																				[with]
+																				[love]
+																			]
+																		]
+																	]
+																]
+															]
+														]
+													]
+												]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={np}] (np) to[out=east,in=south] (tnp);
+			\draw[move={promo}] (promo) to[out= north west,in=south west] (tpromo);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+			\draw[move={nom2}] (nom2) to[out=west,in=south west] (tnom2);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./smlcls_nnp_joined.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex SmlCls - near NP - separated - Chris \textbf{put} a hat which Alex made with love \textbf{on}.\\
+	\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[put]
+									[SC, name =tnp
+										[SC
+											[on]
+											[DP, name = np
+												[a]
+												[NP
+													[hat]
+													[CP, name = tpromo
+														[CP
+															[C, empty]
+															[TP, name = tnom2
+																[TP
+																	[T, empty]
+																	[vP
+																		[Alex, name = nom2]
+																		[v'
+																			[v, empty]
+																			[VP
+																				[VP
+																					[made]
+																					[which, name = promo]
+																				]
+																				[PP
+																					[with]
+																					[love]
+																				]
+																			]
+																		]
+																	]
+																]
+															]
+														]
+													]
+												]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			\draw[move={np}] (np) to[out=north west,in=south west] (tnp);
+			\draw[move={promo}] (promo) to[out= north west,in=south west] (tpromo);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+			\draw[move={nom2}] (nom2) to[out=west,in=south west] (tnom2);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./smlcls_nnp_sep.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex Prtstrd - short NP - joined - Chris \textbf{put on} a hat.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[DP
+										[a]
+										[hat]
+									]
+									[\moved{V'}
+										[put]
+										[on]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={prt}] (prt) to[out=east,in=south] (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+$=>v$
+\input{./strdp_snp_joined_l.io.mgproc.forest}
+
+$v<=$
+\input{./strdp_snp_joined_r.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex Prtstrd - short NP - separated - Chris \textbf{put} a hat \textbf{on}.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[DP
+										[a]
+										[hat]
+									]
+									[V'
+										[\moved{put}]
+										[on]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={prt}] (prt) to[out=west,in=south west] (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+$=>v$
+\input{./strdp_snp_sep_l.io.mgproc.forest}
+
+$v<=$
+\input{./strdp_snp_sep_r.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex Prtstrd - far NP - joined - Chris \textbf{put} \textbf{on} a very very very very expensive hat.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[DP
+										[a]
+										[NP
+											[AP
+												[very]
+												[AP
+													[very]
+													[AP
+														[very]
+														[AP
+															[very]
+															[expensive]
+														]
+													]
+												]
+											]
+											[hat]
+										]
+									]
+									[\moved{V'}
+										[put]
+										[on]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={prt}] (prt) to[out=east,in=south] (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+$=>v$
+\input{./strdp_fnp_joined_l.io.mgproc.forest}
+
+$v<=$
+\input{./strdp_fnp_joined_r.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex Prtstrd - far NP - separated - Chris \textbf{put} a very very very very expensive hat \textbf{on}.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[DP
+										[a]
+										[NP
+											[AP
+												[very]
+												[AP
+													[very]
+													[AP
+														[very]
+														[AP
+															[very]
+															[expensive]
+														]
+													]
+												]
+											]
+											[hat]
+										]
+									]
+									[V'
+										[\moved{put}]
+										[on]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={prt}] (prt) to[out=west,in=south west] (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+$=>v$
+\input{./strdp_fnp_sep_l.io.mgproc.forest}
+
+$v<=$
+\input{./strdp_fnp_sep_r.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex Prtstrd - near NP - joined - Chris \textbf{put} \textbf{on} a hat which Alex made with love.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[DP, name = np
+										[a]
+										[NP
+											[hat]
+											[CP, name = tpromo
+												[CP
+													[C, empty]
+													[TP, name = tnom2
+														[TP
+															[T, empty]
+															[vP
+																[Alex, name = nom2]
+																[v'
+																	[v, empty]
+																	[VP
+																		[VP
+																			[made]
+																			[which, name = promo]
+																		]
+																		[PP
+																			[with]
+																			[love]
+																		]
+																	]
+																]
+															]
+														]
+													]
+												]
+											]
+										]
+									]
+									[\moved{V'}
+										[put]
+										[on]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			\draw[move={promo}] (promo) to[out= north west,in=south west] (tpromo);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+			\draw[move={nom2}] (nom2) to[out=west,in=south west] (tnom2);
+		\end{forest}
+		}
+\end{exe}
+
+$=>v$
+\input{./strdp_nnp_joined_l.io.mgproc.forest}
+
+$v<=$
+\input{./strdp_nnp_joined_r.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex Prtstrd - near NP - separated - Chris \textbf{put} a hat which Alex made with love \textbf{on}.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[DP, name = np
+										[a]
+										[NP
+											[hat]
+											[CP, name = tpromo
+												[CP
+													[C, empty]
+													[TP, name = tnom2
+														[TP
+															[T, empty]
+															[vP
+																[Alex, name = nom2]
+																[v'
+																	[v, empty]
+																	[VP
+																		[VP
+																			[made]
+																			[which, name = promo]
+																		]
+																		[PP
+																			[with]
+																			[love]
+																		]
+																	]
+																]
+															]
+														]
+													]
+												]
+											]
+										]
+									]
+									[V'
+										[\moved{put}]
+										[on]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			\draw[move={promo}] (promo) to[out= north west,in=south west] (tpromo);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+			\draw[move={nom2}] (nom2) to[out=west,in=south west] (tnom2);
+		\end{forest}
+		}
+\end{exe}
+
+$=>v$
+\input{./strdp_nnp_sep_l.io.mgproc.forest}
+
+$v<=$
+\input{./strdp_nnp_sep_r.io.mgproc.forest}
+
+
+\bibliography{Syntaxbib2016fall}
+\end{document}

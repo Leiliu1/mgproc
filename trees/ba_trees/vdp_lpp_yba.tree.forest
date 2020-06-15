@@ -1,0 +1,73 @@
+[CP
+			[C,empty]
+			[TP
+				[TP
+					[T,empty]
+					[vP
+						[zhangsan]
+						[v'
+							[ba]
+							[VP
+								[DP
+									[AP
+										[very]
+										[expensive-de]
+									]
+									[DP
+										[AP
+											[silver.color-de]
+										]
+										[knife.fork]
+									]
+								]
+								[V'
+									[put]
+									[PP, name = loc
+										[zai]
+										[DP
+											[DP
+												[D, empty]
+												[relP, name = ttp
+													[relP
+														[rel
+															[de]
+														]
+														[CP, name = thead
+															[CP
+																[C, empty]
+																[TP, name = tp
+																	[TP
+																		[T, empty]
+																		[vP
+																			[PRO, empty]
+																			[v'
+																				[v, empty]
+																				[VP
+																					[advP
+																						[with]
+																						[metal]
+																					]
+																					[VP
+																						[make]
+																						[table, name = head]
+																					]
+																				]
+																			]
+																		]
+																	]
+																]
+															]
+														]
+													]
+												]
+											]
+											[surface]
+										]	
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+		]

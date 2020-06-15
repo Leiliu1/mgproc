@@ -1,2 +1,0 @@
-		\draw[move = {head raising PP}, olive] (head) to[out=west, in=south west] (thead);
-		\draw[move = {promotion}] (tp) to[out=west, in=south west] (ttp);

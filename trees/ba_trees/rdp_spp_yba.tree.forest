@@ -1,0 +1,55 @@
+[CP
+			[C,empty]
+			[TP
+				[TP
+					[T,empty]
+					[vP
+						[zhangsan]
+						[v'
+							[ba]
+							[VP
+								[DP
+									[D,empty]
+									[RelP, name = ttp
+										[RelP
+											[Rel
+												[de]
+											]
+											[CP, name = thead
+												[CP
+													[C, empty]
+													[TP, name = tp
+														[TP
+															[T, empty]
+															[vP
+																[PRO, empty]
+																[v'
+																	[v, empty]
+																	[VP
+																		[advP
+																			[with]
+																			[precious.metal]
+																		]
+																		[VP
+																			[make]
+																			[knife.fork, name = head]
+																		]
+																	]
+																]
+															]
+														]
+													]
+												]
+											]
+										]
+									]
+								]
+								[V'
+									[put.down]
+								]
+							]
+						]
+					]
+				]
+			]
+		]

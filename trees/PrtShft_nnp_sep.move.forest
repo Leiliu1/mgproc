@@ -1,0 +1,4 @@
+			\draw[move={prt}, Teal] (prt) to[out=west,in=south east] node[fill=white, pos=.6]{PrtShft} (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+			\draw[move={nom2}] (nom2) to[out=west,in=south west] (tnom2);
+			\draw[move={promo}] (promo) to[out= north west,in=south west] (tpromo);

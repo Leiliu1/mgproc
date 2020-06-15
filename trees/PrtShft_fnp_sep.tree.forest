@@ -1,0 +1,41 @@
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP, name = tprt
+									[VP
+										[V
+											[put]
+											[on, name = prt]
+										]
+										[DP
+											[a]
+											[NP
+												[AP
+													[very]
+													[AP
+														[very]
+														[AP
+															[very]
+															[AP
+																[very]
+																[expensive]
+															]
+														]
+													]
+												]
+												[hat]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
