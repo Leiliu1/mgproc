@@ -1,0 +1,54 @@
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[\moved{put}]
+									[SC
+										[DP
+											[a]
+											[NP
+												[hat]
+												[CP, name = tpromo
+													[CP
+														[C, empty]
+														[TP, name = tnom2
+															[TP
+																[T, empty]
+																[vP
+																	[Alex, name = nom2]
+																	[v'
+																		[v, empty]
+																		[VP
+																			[VP
+																				[made]
+																				[which, name = promo]
+																			]
+																			[PP
+																				[with]
+																				[love]
+																			]
+																		]
+																	]
+																]
+															]
+														]
+													]
+												]
+											]
+										]
+										[P'
+											[on]											
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]

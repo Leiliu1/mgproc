@@ -1,0 +1,26 @@
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[\moved{put}]
+									[SC
+										[DP
+											[a]
+											[hat, name =np]
+										]
+										[P'
+											[\moved{on}]											
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
