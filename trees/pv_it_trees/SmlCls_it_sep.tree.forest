@@ -1,0 +1,23 @@
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[put]
+									[SC, name =tnp
+										[SC
+											[on]
+											[it, name = np]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]

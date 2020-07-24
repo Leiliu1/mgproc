@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.10)  21 JUN 2020 00:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.25)  29 JUN 2020 10:31
 entering extended mode
-**./pv_tables.tex
-(pv_tables.tex
-LaTeX2e <2020-02-02> patch level 1
-L3 programming layer <2020-02-08>
+**./dp_simple_tables.tex
+(dp_simple_tables.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-18>
 ("C:\core_apps\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 ("C:\core_apps\MiKTeX 2.9\tex/latex/base\size10.clo"
@@ -61,7 +61,7 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen135
 \ar@mcellbox=\box45
 \extrarowheight=\dimen136
-\NC@list=\toks14
+\NC@list=\toks15
 \extratabsurround=\skip52
 \backup@length=\skip53
 \ar@cellbox=\box46
@@ -72,14 +72,14 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \TX@target=\dimen140
 \TX@delta=\dimen141
 \TX@cols=\count175
-\TX@ftn=\toks15
+\TX@ftn=\toks16
 )
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\enitkv@toks@=\toks16
+\enitkv@toks@=\toks17
 \labelindent=\skip54
 \enit@outerparindent=\dimen142
-\enit@toks=\toks17
+\enit@toks=\toks18
 \enit@inbox=\box47
 \enit@count@id=\count176
 \enitdp@description=\count177
@@ -93,11 +93,11 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 ("C:\core_apps\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 )
 ("C:\core_apps\MiKTeX 2.9\tex/latex/base\fontenc.sty"
-Package: fontenc 2020/01/25 v2.0m Standard LaTeX package
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/skull\skull.sty
 Package: skull 2002/01/23 v0.1 (c) Henrik Christian Grove <grove@math.ku.dk>
@@ -110,7 +110,7 @@ Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 
 ("C:\core_apps\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
-Package: iftex 2019/11/07 v1.0c TeX engine tests
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 ("C:\core_apps\MiKTeX 2.9\tex/generic/iftex\ifluatex.sty"
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
@@ -126,7 +126,7 @@ Package: charter 2005/04/12 PSNFSS-v9.2a (P.Dyballa)
 \UL@box=\box48
 \UL@hyphenbox=\box49
 \UL@skip=\skip57
-\UL@hook=\toks20
+\UL@hook=\toks21
 \UL@height=\dimen143
 \UL@pe=\count179
 \UL@pixel=\dimen144
@@ -163,7 +163,7 @@ Package: ulem 2019/11/18
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfrcs.sty
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-commo
 n.tex
-\pgfutil@everybye=\toks21
+\pgfutil@everybye=\toks22
 \pgfutil@tempdima=\dimen146
 \pgfutil@tempdimb=\dimen147
 
@@ -187,7 +187,7 @@ Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\core_apps\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
+\KV@toks@=\toks23
 )
 ("C:\core_apps\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
@@ -210,12 +210,12 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.code.
 tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
 
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeysfilter
 ed.code.tex
-\pgfkeys@tmptoks=\toks25
+\pgfkeys@tmptoks=\toks26
 ))
 \pgf@x=\dimen150
 \pgf@y=\dimen151
@@ -233,9 +233,9 @@ ed.code.tex
 \c@pgf@countb=\count192
 \c@pgf@countc=\count193
 \c@pgf@countd=\count194
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
+\t@pgf@toka=\toks27
+\t@pgf@tokb=\toks28
+\t@pgf@tokc=\toks29
 \pgf@sys@id@count=\count195
 
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgf.cfg
@@ -275,9 +275,9 @@ ex)
 \pgfmath@dimen=\dimen160
 \pgfmath@count=\count198
 \pgfmath@box=\box59
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
 )
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions.c
 ode.tex
@@ -433,8 +433,8 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.tex)
 \pgffor@iter=\dimen187
 \pgffor@skip=\dimen188
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
 ))
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz\tikz
 .code.tex
@@ -509,9 +509,9 @@ File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgftree@lastchildy=\dimen274
 ))
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/generic/tikz-qtree\tikz-qtree.tex
-\@result=\toks34
-\child@list=\toks35
-\root@node=\toks36
+\@result=\toks35
+\child@list=\toks36
+\root@node=\toks37
 )) (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/forest\forest.sty
 Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
 
@@ -599,8 +599,8 @@ ersections.code.tex
 )
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/pgfopts\pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks37
-\pgfopts@list@add@b@toks=\toks38
+\pgfopts@list@add@a@toks=\toks38
+\pgfopts@list@add@b@toks=\toks39
 )
 ("C:\core_apps\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
@@ -615,36 +615,38 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 ("C:\core_apps\MiKTeX 2.9\tex/latex/trimspaces\trimspaces.sty"
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks39
+\@envbody=\toks40
 )
 ("C:\core_apps\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
 ("C:\core_apps\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
-Package: expl3 2020-02-08 L3 programming layer (loader) 
+Package: expl3 2020-06-18 L3 programming layer (loader) 
 
 ("C:\core_apps\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+File: l3backend-pdfmode.def 2020-06-23 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count283
 \l__pdf_internal_box=\box90
 ))
-Package: xparse 2020-02-08 L3 Experimental document command parser
+Package: xparse 2020-05-15 L3 Experimental document command parser
+
+("C:\core_apps\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse-generic.tex"
 \l__xparse_current_arg_int=\count284
 \g__xparse_grabber_int=\count285
 \l__xparse_m_args_int=\count286
 \l__xparse_v_nesting_int=\count287
-)
+))
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/inlinedef\inlinedef.sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
-\ID@toks=\toks40
+\ID@toks=\toks41
 \ID@count=\count288
 )
-\ID@usercommands=\toks41
+\ID@usercommands=\toks42
 \safeloop@depth=\count289
 \safeRKloop@depth=\count290
 \forest@temp@dimen=\dimen275
 \forest@temp@count=\count291
 \forest@n=\count292
 \forest@temp@global@count=\count293
-\forest@temp@toks=\toks42
+\forest@temp@toks=\toks43
 \forest@temparray@M=\count294
 \forest@temparray@N=\count295
 \forest@global@temparray@M=\count296
@@ -655,8 +657,8 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@sort@m=\count300
 \forest@sort@k=\count301
 \forest@sort@p=\count302
-\bracket@content=\toks43
-\bracket@afterthought=\toks44
+\bracket@content=\toks44
+\bracket@afterthought=\toks45
 \forest@node@maxid=\count303
 \forest@process@left@M=\count304
 \forest@process@left@N=\count305
@@ -667,18 +669,18 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@process@result@M=\count310
 \forest@process@result@N=\count311
 \forest@process@n=\count312
-\forest@nodewalk@branch@toks=\toks45
-\forest@nodewalk@shortsteps@resolution=\toks46
-\forest@do@dynamics=\toks47
+\forest@nodewalk@branch@toks=\toks46
+\forest@nodewalk@shortsteps@resolution=\toks47
+\forest@do@dynamics=\toks48
 \forest@box=\box91
 \forest@xg=\dimen277
 \forest@yg=\dimen278
 \forest@xs=\dimen279
 \forest@ys=\dimen280
-\forest@pi@toks=\toks48
-\forest@segment@toks=\toks49
-\forest@PIi@toks=\toks50
-\forest@PIii@toks=\toks51
+\forest@pi@toks=\toks49
+\forest@segment@toks=\toks50
+\forest@PIi@toks=\toks51
+\forest@PIii@toks=\toks52
 \forest@copy@in=\read3
 \forest@copy@out=\write4
 \forest@externalize@max@outer@n=\count313
@@ -697,11 +699,11 @@ File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowwidth=\dimen283
 \pgfarrowlinewidth=\dimen284
 ) ("C:\core_apps\MiKTeX 2.9\tex/latex/tcolorbox\tcolorbox.sty"
-Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+Package: tcolorbox 2020/04/28 version 4.30 text color boxes
 ("C:\core_apps\MiKTeX 2.9\tex/latex/tools\verbatim.sty"
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks52
-\verbatim@line=\toks53
+\every@verbatim=\toks53
+\verbatim@line=\toks54
 \verbatim@in@stream=\read4
 )
 \tcb@titlebox=\box93
@@ -710,7 +712,7 @@ Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 \tcb@phantombox=\box96
 \c@tcbbreakpart=\count315
 \c@tcblayer=\count316
-\tcolorbox@number=\count317
+\c@tcolorbox@number=\count317
 \tcb@temp=\box97
 \tcb@temp=\box98
 \tcb@temp=\box99
@@ -719,7 +721,7 @@ Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 \tcb@record@out=\write6
 
 ("C:\core_apps\MiKTeX 2.9\tex/latex/tcolorbox\tcbbreakable.code.tex"
-Library (tcolorbox): 'tcbbreakable.code.tex' version '4.22'
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.30'
 \tcb@testbox=\box101
 \tcb@totalupperbox=\box102
 \tcb@totallowerbox=\box103
@@ -733,7 +735,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 ("C:\core_apps\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks54
+\@emptytoks=\toks55
 \ex@=\dimen285
 )
 LaTeX Info: Redefining \text on input line 28.
@@ -765,21 +767,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count325
 \dspbrk@lvl=\count326
-\tag@help=\toks55
+\tag@help=\toks56
 \row@=\count327
 \column@=\count328
 \maxfields@=\count329
-\andhelp@=\toks56
+\andhelp@=\toks57
 \eqnshift@=\dimen288
 \alignsep@=\dimen289
 \tagshift@=\dimen290
 \tagwidth@=\dimen291
 \totwidth@=\dimen292
 \lineht@=\dimen293
-\@envbody=\toks57
+\@envbody=\toks58
 \multlinegap=\skip61
 \multlinetaggap=\skip62
-\mathdisplay@stack=\toks58
+\mathdisplay@stack=\toks59
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
@@ -881,7 +883,7 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \WF@size=\dimen304
 \c@WF@wrappedlines=\count340
 \WF@box=\box152
-\WF@everypar=\toks59
+\WF@everypar=\toks60
 Package: wrapfig 2003/01/31  v 3.6
 )
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/titlesec\titlesec.sty
@@ -891,7 +893,7 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \aftertitleunit=\skip66
 \ttl@plus=\dimen305
 \ttl@minus=\dimen306
-\ttl@toksa=\toks60
+\ttl@toksa=\toks61
 \titlewidth=\dimen307
 \titlewidthlast=\dimen308
 \titlewidthfirst=\dimen309
@@ -904,7 +906,7 @@ Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
 \csq@qlevel=\count344
 \csq@maxlvl=\count345
 \csq@tshold=\count346
-\csq@ltx@everypar=\toks61
+\csq@ltx@everypar=\toks62
 
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
@@ -932,7 +934,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen315
 \Gm@layouthoffset=\dimen316
 \Gm@layoutvoffset=\dimen317
-\Gm@dimlist=\toks62
+\Gm@dimlist=\toks63
 
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/geometry\geometry.cfg))
 (C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyhdr\fancyhdr.sty
@@ -953,8 +955,8 @@ Package: mycommands
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (pv_tables.aux)
-\openout1 = `pv_tables.aux'.
+ (dp_simple_tables.aux)
+\openout1 = `dp_simple_tables.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -983,12 +985,12 @@ File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 \scratchbox=\box154
 \nofMPsegments=\count351
 \nofMParguments=\count352
-\everyMPshowfont=\toks63
+\everyMPshowfont=\toks64
 \MPscratchCnt=\count353
 \MPscratchDim=\dimen319
 \MPnumerator=\count354
 \makeMPintoPDFobject=\count355
-\everyMPtoPDFconversion=\toks64
+\everyMPtoPDFconversion=\toks65
 ) ("C:\core_apps\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1043,27 +1045,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
 5.
 
-(C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/stmaryrd\ustmry.fd)
-Overfull \hbox (46.11491pt too wide) in paragraph at lines 35--36
-[][] 
- []
+(C:\Users\ll\AppData\Roaming\MiKTeX\2.9\tex/latex/stmaryrd\ustmry.fd) [1
 
-[1
-
-{C:/Users/ll/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(pv_tables.aux) ) 
+{C:/Users/ll/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (dp_simple_tab
+les.aux) ) 
 Here is how much of TeX's memory you used:
- 30401 strings out of 481565
- 682619 string characters out of 2925218
- 978643 words of memory out of 3000000
- 45188 multiletter control sequences out of 15000+200000
+ 30417 strings out of 480790
+ 683332 string characters out of 2906474
+ 964396 words of memory out of 3000000
+ 45975 multiletter control sequences out of 15000+200000
  541716 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,7n,79p,1641b,150s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/core_apps/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users
-/ll/AppData/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/User
-s/ll/AppData/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchr8a.pfb>
-Output written on pv_tables.pdf (1 page, 21578 bytes).
+ 68i,7n,79p,1648b,152s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/core_apps/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/ll/App
+Data/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/ll/Ap
+pData/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchr8a.pfb>
+Output written on dp_simple_tables.pdf (1 page, 21271 bytes).
 PDF statistics:
  18 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

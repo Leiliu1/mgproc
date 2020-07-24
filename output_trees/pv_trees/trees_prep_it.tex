@@ -1,0 +1,225 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage{mypackages}
+\usepackage{mycommands}
+\begin{document}
+
+
+
+\begin{itemize}
+	\item Trees
+\end{itemize}
+
+\begin{exe}
+	\ex prtshft - it - joined *Chris put on it.
+	\scalebox{.7}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[V
+										[put]
+										[on]
+									]
+									[it]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={prt}] (prt) to[out=east,in=south] (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+	}
+\end{exe}
+
+\input{./prtshft_it_joined.io.mgproc.forest}
+
+\begin{exe}
+	\ex prtshft - it - sep - Chris put it on.
+	\scalebox{.7}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP, name = tprt
+									[VP
+										[V
+											[put]
+											[on, name = prt]
+										]
+										[it]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			\draw[move={prt}] (prt) to[out=west,in=south east] (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+	}
+\end{exe}
+
+\input{./prtshft_it_sep.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex smlcls - it - joined * Chris put on it\\
+	\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[put]
+									[SC
+										[on]
+										[it]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={np}] (np) to[out=east,in=south] (tnp);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./smlcls_it_joined.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex SmlCls - it - sep - Chris put it on\\
+	\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[put]
+									[SC, name =tnp
+										[SC
+											[on]
+											[it, name = np]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			\draw[move={np}] (np) to[out=north west,in=south west] (tnp);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./smlcls_it_sep.io.mgproc.forest}
+
+
+\pagebreak
+
+\begin{exe}
+	\ex Prtstrd - it - joined - *Chris put on it.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[it]
+									[\moved{V'}
+										[put]
+										[on]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={prt}] (prt) to[out=east,in=south] (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./strdp_it_joined_l.io.mgproc.forest}
+
+\pagebreak
+
+\begin{exe}
+	\ex Prtstrd - it - sep - Chris put it on.\\
+		\scalebox{.8}{
+		\begin{forest}
+			[CP
+				[C, empty]
+				[TP, name = tnom
+					[TP
+						[T, empty]
+						[vP
+							[Chris, name = nom]
+							[v'	
+								[v, empty]
+								[VP
+									[it]
+									[V'
+										[\moved{put}]
+										[on]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+			% \draw[move={prt}] (prt) to[out=west,in=south west] (tprt);
+			\draw[move={nom}] (nom) to[out=west,in=south west] (tnom);
+		\end{forest}
+		}
+\end{exe}
+
+\input{./strdp_it_sep_l.io.mgproc.forest}
+
+\bibliography{Syntaxbib2016fall}
+\end{document}

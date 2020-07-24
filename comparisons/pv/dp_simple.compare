@@ -1,0 +1,21 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+# ParticleShift sNP ; ; PrtShft_snp_joined ; PrtShft_snp_sep ;
+# ParticleShift fNP ; ; PrtShft_fnp_joined ; PrtShft_fnp_sep ;
+# ParticleShift nNP ; ; PrtShft_nnp_joined ; PrtShft_nnp_sep ;
+
+# SmallClause sNP ; ; SmlCls_snp_joined ; SmlCls_snp_sep ;
+SmallClause fNP ; ; SmlCls_fnp_joined ; SmlCls_fnp_sep ;
+StrandParticle fNP l ; ; StrdP_fnp_joined_l ; StrdP_fnp_sep_l ;
+
+# StrandParticle sNP l ; ; StrdP_snp_joined_l ; StrdP_snp_sep_l ;
+SmallClause nNP ; ; SmlCls_nnp_joined ; SmlCls_nnp_sep ;
+StrandParticle nNP l ; ; StrdP_nnp_joined_l ; StrdP_nnp_sep_l ;
+
+
+
+# StrandParticle sNP r ; ; StrdP_snp_joined_r ; StrdP_snp_sep_r ;
+# StrandParticre fNP r ; ; StrdP_fnp_joined_r ; StrdP_fnp_sep_r ;
+# StrandParticre nNP r ; ; StrdP_nnp_joined_r ; StrdP_nnp_sep_r ;
